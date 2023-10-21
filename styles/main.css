@@ -1,0 +1,141 @@
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  background-color: #007bff !important;
+}
+.navbar .navbar-brand {
+  color: #007bff !important;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.navbar .nav-link {
+  color: #333 !important;
+}
+.navbar .nav-link:hover {
+  color: #ccc !important;
+}
+.navbar .navbar-toggler-icon {
+  background-color: #fff !important;
+}
+.navbar .menu-toggle {
+  background-color: #f00;
+}
+.navbar .menu-toggle .bar {
+  background-color: #fff;
+}
+
+.side-container {
+  flex: 0 0 20%;
+  padding: 20px;
+  background-color: #eee;
+}
+.side-container h3 {
+  margin-top: 0;
+}
+.side-container .aside-list {
+  list-style-type: none;
+  padding: 0;
+}
+.side-container .aside-list .aside-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.side-container .aside-list .aside-item:hover {
+  background-color: #ccc;
+}
+
+.news-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  width: 80%;
+}
+.news-container h3 {
+  margin-top: 0;
+}
+
+.news-item {
+  flex: 1 1 calc(25% - 2rem);
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.news-item .card-img-top {
+  width: 80%;
+  height: auto;
+}
+.news-item .card-text {
+  margin-top: 1rem;
+}
+.news-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.footer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+}
+.footer .footer-icon {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+.footer .footer-icon img {
+  width: 100px;
+}
+.footer .footer-info {
+  flex: 1;
+  text-align: right;
+}
+.footer .footer-info p {
+  margin: 5px 0;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .news-container .news-item {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+@media (max-width: 767px) and (min-width: 360px) {
+  .news-container .news-item {
+    flex: 1 1 calc(100% - 2rem);
+  }
+}
+@media (max-width: 359px) {
+  .news-container .news-item {
+    flex: 1 1 calc(100% - 2rem);
+  }
+}
+@media (max-width: 768px) {
+  .side-container {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
